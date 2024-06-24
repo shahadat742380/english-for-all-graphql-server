@@ -1,0 +1,29 @@
+{
+  "name": "english-for-all-graphql-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node build/index.js",
+    "dev": "tsc-watch --onSuccess \"npm start\"",
+    "generate": "drizzle-kit generate",
+    "studio": "drizzle-kit studio --port 3333",
+    "push": "drizzle-kit push",
+    "migrate": "drizzle-kit generate --schema=./db/schemas/*"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/pg": "^8.11.6",
+    "tsc-watch": "^6.2.0",
+    "typescript": "^5.5.2"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.10.4",
+    "drizzle-graphql": "^0.8.4",
+    "drizzle-kit": "^0.22.7",
+    "drizzle-orm": "^0.31.2",
+    "express": "^4.19.2",
+    "graphql": "^16.9.0",
+    "pg": "^8.12.0"
+  }
+}
